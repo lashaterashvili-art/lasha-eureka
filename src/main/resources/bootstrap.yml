@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: eureka-service
+  cloud:
+    config:
+      uri:  ${CONFIG_SERVER}
+    loadbalancer:
+      ribbon:
+        enabled: false
