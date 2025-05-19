@@ -12,4 +12,4 @@ COPY --from=build /app/target/keepz-wallet-eureka-server-0.0.1-SNAPSHOT.jar /app
 
 WORKDIR /app
 
-ENTRYPOINT java -jar app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]
