@@ -3,7 +3,7 @@ spring:
     name: eureka-service
   cloud:
     config:
-      uri:  ${CONFIG_SERVER}
+      uri:  https://ZXCaizenZXC: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@github.com/ZXCaizenZXC/config-serv.git 
     loadbalancer:
       ribbon:
         enabled: false
