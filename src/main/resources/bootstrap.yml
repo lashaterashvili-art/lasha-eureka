@@ -1,9 +1,9 @@
 spring:
   application:
-    name: eureka-service-1
+    name: eureka-service
   cloud:
     config:
-      uri:  ${CONFIG_SERVER:http://localhost:8071}
+      uri:  ${CONFIG_SERVER}
     loadbalancer:
       ribbon:
         enabled: false
