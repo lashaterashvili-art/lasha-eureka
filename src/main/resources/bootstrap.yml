@@ -1,23 +1,9 @@
-server:
-  port: ${EUREKA_PORT:8070}
-
 spring:
   application:
     name: eureka-service
-
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-  server:
-    enable-self-preservation: false
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info
-  endpoint:
-    health:
-      show-details: always
+  cloud:
+    config:
+      uri:  ${CONFIG_SERVER}
+    loadbalancer:
+      ribbon:
 
